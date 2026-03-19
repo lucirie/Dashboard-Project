@@ -31,9 +31,46 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-nav {
+nav, .extra {
   grid-column: 1/2;
   grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo {
+  padding: 20px 0;
+  border-bottom: 2px dashed var(--border-color);
+}
+
+.logo a {
+  font-size: 2.3rem;
+  color: var(--heading-font-color);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--normal-font-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding-left: 20px
+}
+
+.nav-item:hover {
+  color: var(--heading-font-color);
+}
+
+.nav-item svg {
+  height: 2rem;
+  color: #FA8112;
+}
+
+.extra {
+  margin-top: 100px;
 }
 
 header {
@@ -47,6 +84,8 @@ main {
 aside {
   grid-row: 2/4;
 }
+
+
 
 /*
   Josh's Custom CSS Reset
